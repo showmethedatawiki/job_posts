@@ -1,0 +1,82 @@
+{
+	"name": "Custom",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": { 
+			"VARIANT": "3.10",
+			"NODE_VERSION": "none"
+		}
+	},
+
+	"settings": { 
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+	},
+
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance", 
+		"amazonwebservices.aws-toolkit-vscode", 
+		"formulahendry.code-runner",
+		"equinusocio.vsc-community-material-theme", 
+		"ritwickdey.create-file-folder", 
+		"ms-azuretools.vscode-docker", 
+		"hediet.vscode-drawio", 
+		"grapecity.gc-excelviewer", 
+		"eamodio.gitlens", 
+		"zainchen.json", 
+		"ms-toolsai.jupyter", 
+		"ms-toolsai.jupyter-keymap", 
+		"ms-toolsai.jupyter-renderers", 
+		"davidanson.vscode-markdownlint",
+		"pkief.material-icon-theme",
+		"equinusocio.vsc-material-theme",
+		"equinusocio.vsc-material-theme-icons",
+		"esbenp.prettier-vscode",
+		"njpwerner.autodocstring",
+		"donjayamanne.python-environment-manager",
+		"mgesbert.python-path", 
+		"ms-vscode-remote.remote-containers", 
+		"ms-vscode-remote.remote-ssh",
+		"ms-vscode-remote.remote-ssh-edit", 
+		"mutantdino.resourcemonitor", 
+		"tabnine.tabnine-vscode", 
+		"tabnine.tabnine-vscode", 
+		"gruntfuggly.todo-tree", 
+		"visualstudioexptteam.vscodeintellicode",
+		"jithurjacob.nbpreviewer",
+		"vscode-icons-team.vscode-icons",
+		"redhat.vscode-yaml", 
+		"donjayamanne.githistory", 
+		"ms-kubernetes-tools.vscode-kubernetes-tools", 
+		"hilleer.yaml-plus-json"
+	],
+
+	"forwardPorts": [8888],
+
+	"postCreateCommand": "mkdir -p doc",
+
+	"remoteUser": "vscode",
+
+	"mounts": [
+		"source=/home/abdella/.byobu,target=/home/vscode/.byobu,type=bind,consistency=cached", 
+		"source=/home/abdella/.bash_profile,target=/home/vscode/.bash_profile,type=bind,consistency=cached",
+		"source=/home/abdella/.bashrc,target=/home/vscode/.bashrc,type=bind,consistency=cached",
+		"source=/home/abdella/.aws,target=/home/vscode/.aws,type=bind,consistency=cached",
+		"source=/home/abdella/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+	  ]	
+}
+
+
+

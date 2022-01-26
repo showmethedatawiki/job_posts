@@ -74,7 +74,8 @@
 		"source=/home/abdella/.bash_profile,target=/home/vscode/.bash_profile,type=bind,consistency=cached",
 		"source=/home/abdella/.bashrc,target=/home/vscode/.bashrc,type=bind,consistency=cached",
 		"source=/home/abdella/.aws,target=/home/vscode/.aws,type=bind,consistency=cached",
-		"source=/home/abdella/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+		"source=/home/abdella/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+		"source=/home/abdella/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	  ]	
 }
 

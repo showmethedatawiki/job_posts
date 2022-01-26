@@ -44,9 +44,8 @@ Scrapper for middle east jobs market.
 
 ### **Code**
 
-#TODO- Document it and generate READTHEDOCS sphinx htmls
-#TODO - Package it into a container with airflow
-#TODO - Publish to dockerhub, readthedocs and github.blog
+- Package it into a container with airflow
+- Publish to dockerhub, readthedocs and github.blog
 - Abstract configs into yaml or json files
 - Standarized abstract class for interacting with different modules for each job portal website
 - Store data into the cloud in s3 bucket

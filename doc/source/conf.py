@@ -10,13 +10,10 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath('job_posts')))
+#HACK Make sure to add export PYTHONPATH="abs path of root directory" in terminal in order for the docs to find the classes
 
 # -- Project information -----------------------------------------------------
-
 project = "Job Posts Data Scrapper"
 copyright = '2022, abdella'
 author = 'abdella'
